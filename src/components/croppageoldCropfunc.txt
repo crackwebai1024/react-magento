@@ -1,0 +1,92 @@
+
+      // var it = {
+      //   ...imageTransforms,
+      //   rotation: inputRef.current.value,
+      //   cropboxX: x,
+      //   cropboxY: y,
+      //   cropboxWidth: width,
+      //   cropboxHeight: height,
+      //   crop: true
+      // };
+      // // get rid of imageTransforms ...use unscaledCanvas.js
+      // setImageTransforms(it);
+      // debugger;
+      // var scaledCropCoords = getOrigCropCoords(it);
+      // console.log("scaledCropCoords", scaledCropCoords);
+      // //create canvas in memory
+      // const canv = document.createElement("CANVAS");
+      // canv.setAttribute("id", "canvasInMemory");
+      // //imageTransforms initiated, canvas unchanged.
+      // // const canv = canRef.current;
+      // const ctxx = canv.getContext("2d");
+      // ctxx.clearRect(0, 0, canv.width, canv.height);
+      // //get the largest dimension for canvas to fit original image at any angle
+
+      // var img = new Image();
+      // img.onload = () => {
+      //   var imageDiag = Math.ceil(
+      //     Math.sqrt(
+      //       Math.pow(it.origImageWidth, 2) + Math.pow(it.origImageHeight, 2)
+      //     )
+      //   );
+      //   canv.width = imageDiag;
+      //   canv.height = imageDiag;
+      //   //   ctxx.save();
+      //   ctxx.translate(canv.width / 2, canv.height / 2);
+      //   //rotate the image just like the user did to smaller image
+      //   ctxx.rotate((+it.rotation * Math.PI) / 180);
+      //   ctxx.translate(-canv.width / 2, -canv.height / 2);
+      //   ctxx.drawImage(
+      //     img,
+      //     canv.width / 2 - img.width / 2,
+      //     canv.height / 2 - img.height / 2
+      //   );
+
+      //   //   ctxx.restore();
+      //   debugger;
+      //   const imgData = ctxx.getImageData(
+      //     scaledCropCoords.x,
+      //     scaledCropCoords.y,
+      //     scaledCropCoords.width,
+      //     scaledCropCoords.height
+      //   );
+
+      //   ctxx.clearRect(0, 0, canv.width, canv.height);
+      //   canv.width = scaledCropCoords.width;
+      //   canv.height = scaledCropCoords.height;
+      //   ctxx.putImageData(imgData, 0, 0);
+
+      //   const urlCropped = canv.toDataURL();
+
+      //   //now that image is cropped to 'orig' size
+      //   //reset the imageTransforms with empty cropbox and new imagesizes
+      //   var croppedImage = new Image();
+      //   croppedImage.onload = () => {
+      //     //allow further cropping and rotations
+      //     //calc diagnoal.
+      //     setImageTransforms(
+      //       initImageTransforms(
+      //         croppedImage,
+      //         0,
+      //         0,
+      //         canv.width,
+      //         canv.height,
+      //         canv
+      //       )
+      //     );
+      //   };
+      //   croppedImage.src = urlCropped;
+
+      //   setCurrentImageURL(urlCropped);
+      //   console.log("urlCropped", urlCropped);
+      //   storeCroppedImage(urlCropped);
+      // //   ctxx.clearRect(0, 0, canv.width, canv.height);
+      // };
+      // img.src = greyUploadedImageURL;
+
+      //reset initImageTransform
+      //remove memory canvaswhen new image is made
+      // debugger;
+      // var elem = document.getElementById("canvasInMemory");
+      // elem.parentNode.removeChild(elem);
+      // debugger;
