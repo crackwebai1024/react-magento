@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "colorthief": "2.3.0",
-    "d3": "5.14.2",
+    "d3": "7.6.1",
     "lodash": "4.17.15",
     "mathjs": "6.2.5",
     "react": "^16.12.0",
